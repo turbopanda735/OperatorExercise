@@ -19,12 +19,12 @@ namespace OperatorExercise
             var additionSum = num1 + num2;
             var subtactionSum = num1 - num2;
             var multiplicationSum = num1 * num2;
-            var divisionSum = num1 / num2;
-            var quotient = num1 % num2;
+            var quotient = num1 / num2;
+            var remainder = num1 % num2;
 
-            Console.WriteLine($"Addition: {additionSum}. Subtraction: {subtactionSum}. Multiplication: {multiplicationSum}. Division: {divisionSum}.");
-            Console.WriteLine($"{num1}/{num2} is {divisionSum} remainder {quotient}.");
-            Console.WriteLine($"Please note: {num1} and {num2} are set to doubles to display more accurate division. As a result, {quotient} is the remainder of division for whole numbers. It will not divide whole numbers into decimals.");
+            Console.WriteLine($"Addition: {additionSum}. Subtraction: {subtactionSum}. Multiplication: {multiplicationSum}. Division: {quotient}.");
+            Console.WriteLine($"{num1} / {num2} is {quotient} remainder {remainder}.");
+            Console.WriteLine($"Please note: {num1} and {num2} are set to doubles to display more accurate division. As a result, {remainder} is the remainder of division for whole numbers. It will not divide whole numbers into decimals.");
 
             Console.WriteLine("please enter radius of the circle");
             var radius = double.Parse(Console.ReadLine());
