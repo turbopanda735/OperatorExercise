@@ -30,6 +30,7 @@ namespace OperatorExercise
             Console.WriteLine("please enter radius of the circle");
             var radius = double.Parse(Console.ReadLine());
             double area = AreaOfCircle(radius);
+            Console.WriteLine(area);
             Console.ReadLine();
         }
         static double AreaOfCircle(double r)
