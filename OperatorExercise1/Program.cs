@@ -25,14 +25,17 @@ namespace OperatorExercise
             Console.WriteLine($"Addition: {additionSum}. Subtraction: {subtactionSum}. Multiplication: {multiplicationSum}. Division: {quotient}.");
             Console.WriteLine($"{num1} / {num2} is {quotient} remainder {remainder}.");
             Console.WriteLine($"Please note: {num1} and {num2} are set to doubles to display more accurate division. As a result, {remainder} is the remainder of division for whole numbers. It will not divide whole numbers into decimals.");
-            AreaOfCircle();
-        }
-        static double AreaOfCircle()
-        {
+            
+            
             Console.WriteLine("please enter radius of the circle");
             var radius = double.Parse(Console.ReadLine());
-            var area = Math.PI * Math.Pow(radius, 2);
-            Console.WriteLine($"The area of a circle with a radius of {radius} is {area}.");
+            double area = AreaOfCircle(radius);
+            Console.ReadLine();
+        }
+        static double AreaOfCircle(double r)
+        {
+            var area = Math.PI * Math.Pow(r, 2);
+            Console.WriteLine($"The area of a circle with a radius of {r} is {area}.");
             return area;
         }
     }
